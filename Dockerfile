@@ -24,3 +24,4 @@ EXPOSE        1110
 EXPOSE        1025
 WORKDIR       /usr/local/davmail
 ENTRYPOINT    ["/usr/local/davmail/docker-davmail-init.sh"]
+CMD           []
