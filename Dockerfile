@@ -9,7 +9,7 @@ RUN           apt-get update
 RUN           apt-get install -y default-jre wget
 RUN           apt-get clean
 RUN           mkdir /usr/local/davmail
-RUN           wget -O - http://downloads.sourceforge.net/project/davmail/davmail/4.4.1/davmail-linux-x86_64-4.4.1-2225.tgz | tar -C /usr/local/davmail --strip-components=1 -xvz
+RUN           wget -qO - http://downloads.sourceforge.net/project/davmail/davmail/4.5.0/davmail-linux-x86_64-4.5.0-2292.tgz | tar -C /usr/local/davmail --strip-components=1 -xvz
 ADD docker-davmail-init.sh /usr/local/davmail/
 
 # Cleanup for a smaller image
